@@ -2,75 +2,114 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <title>IPR – Intelligent Portfolio Review</title>
+  <title>Retniw Consulting AB – IPR</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
       color: #222;
+      line-height: 1.6;
     }
-    .header {
+    header {
       text-align: center;
+      margin-bottom: 30px;
     }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.2em;
+    .logo {
+      max-width: 160px;
+      margin: 0 auto 10px;
     }
-    p {
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    nav button {
+      margin: 0 10px;
+      padding: 6px 12px;
+      border: none;
+      background: #0077cc;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    h1, h2 {
+      text-align: center;
       margin-top: 1em;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    hr {
+      margin: 40px 0;
+    }
+    .contact {
+      margin-top: 2em;
+      text-align: center;
     }
     a {
       color: #0077cc;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    .logo {
-      display: block;
-      margin: 0 auto 30px auto;
-      max-width: 150px;
-    }
-    hr {
-      margin: 40px 0;
-    }
   </style>
 </head>
 <body>
+  <header>
+    <img src="RetniwLogo.png" alt="Retniw logo" class="logo">
+    <h1>Retniw Consulting AB</h1>
+    <p>Organisationsnummer: 559238-7335<br>Registreringsland: Sverige</p>
+  </header>
 
-  <div class="header">
-    <!-- Logotyp -->
-    <img src="IPRljus.png" alt="IPR logo" class="logo">
-    <h1>IPR – Intelligent Portfolio Review</h1>
+  <nav>
+    <button onclick="showSection('sv')">🇸🇪 Svenska</button>
+    <button onclick="showSection('en')">🇬🇧 English</button>
+  </nav>
+
+  <section id="sv" class="active">
+    <h2>Om företaget</h2>
+    <p>Retniw Consulting AB bedriver konsultverksamhet inom ekonomi och finans samt investeringsverksamhet avseende värdepapper och därmed förenlig verksamhet.</p>
+
+    <h2>Om grundaren</h2>
+    <p>Peter Hansson har över 30 års erfarenhet från institutionella investeringar. Han var verkställande direktör för SPK Sparinstitutens Pensionskassa mellan 2005 och 2018, efter att ha tjänstgjort som finanschef sedan 1993.</p>
+    <p>Under hans ledarskap tilldelades SPK flera utmärkelser, däribland IPE:s pris för bästa pensionsfond i Sverige sex år i rad, samt erkännande i CIO Magazines European Innovation Awards för Best Portfolio Construction Europe.</p>
+    <p>Peter har tre gånger utsetts till en av världens mest inflytelserika kapitalförvaltare på aiCIO:s globala Power 100-lista. Idag är han ordförande i styrelsen för Nordkinn Asset Management AB, styrelseledamot i Första AP-fonden (AP1) samt ordförande i Barncancerfondens finansnämnd.</p>
+
+    <h2>Om IPR – Intelligent Portfolio Review</h2>
+    <p>Idén till IPR föddes 1995 när Peter Hansson skapade programmet AFU (Aktiv Förvaltnings Uppföljning) i Visual Basic. Sommaren 2024 började han utveckla en ny version i Swift för iPad.</p>
+    <p>IPR är ett utbildnings- och analysverktyg. Det ger inte investeringsråd eller rekommendationer. Informationen och resultaten som visas bygger på historisk data och är avsedda att stödja lärande och förståelse för portföljbeteende. Alla beslut och åtgärder är användarens eget ansvar.</p>
+    <p>IPR hjälper dig att analysera hur fonder eller portföljer har utvecklats över tid. Det är utformat för att visa vad som påverkat avkastning, undersöka alternativa allokeringar och illustrera hur olika faktorer kan påverka resultaten – utan att ge finansiella råd.</p>
+    <p>Appen är avsedd för användning i Sverige. Den är inte godkänd för användning eller distribution i andra jurisdiktioner.</p>
+  </section>
+
+  <section id="en">
+    <h2>About the Company</h2>
+    <p>Retniw Consulting AB provides financial and economic consulting and invests in securities and related activities. The company is registered in Sweden.</p>
+
+    <h2>About the Founder</h2>
+    <p>Peter Hansson has over 30 years of experience in institutional investments. He served as CEO of SPK Sparinstitutens Pensionskassa from 2005 to 2018, having previously served as CFO since 1993.</p>
+    <p>Under his leadership, SPK received several awards including IPE’s Best Pension Fund in Sweden for six consecutive years, and CIO Magazine’s European Innovation Award for Best Portfolio Construction Europe.</p>
+    <p>Peter has been listed three times among the world’s 100 most influential asset managers by aiCIO’s global Power 100. He currently chairs the board of Nordkinn Asset Management AB, is a board member of the First Swedish National Pension Fund (AP1), and chairs the finance committee of the Swedish Childhood Cancer Fund.</p>
+
+    <h2>About IPR – Intelligent Portfolio Review</h2>
+    <p>The idea for IPR originated in 1995 when Peter developed AFU (Active Management Follow-Up) using Visual Basic. In 2024, he began developing IPR as a Swift-based iPad app.</p>
+    <p>IPR is an educational and analytical tool. It does not provide investment advice or recommendations. The information and results shown are based on historical data and are intended to support learning and understanding of portfolio behavior. All decisions and actions remain the sole responsibility of the user.</p>
+    <p>IPR helps you discover how funds or asset portfolios have performed over time. It is designed to support understanding of performance drivers, explore alternative allocations, and illustrate how different factors may affect results – all without providing financial advice.</p>
+    <p>This app is intended for use in Sweden. It is not approved for use or distribution in other jurisdictions.</p>
+  </section>
+
+  <div class="contact">
+    <p><strong>Kontakt:</strong> <a href="mailto:developer@retniw.se">developer@retniw.se</a></p>
   </div>
 
-  <p><strong>Utgivare:</strong> Retniw Consulting AB</p>
-  <p><strong>Organisationsnummer:</strong> 559238-7335</p>
-
-  <!-- Svensk text -->
-  <p><strong>IPR</strong> är ett utbildnings- och analysverktyg. Det ger inte investeringsråd eller rekommendationer.</p>
-
-  <p>Informationen och resultaten som visas bygger på historisk data och är avsedda att stödja lärande och förståelse för portföljbeteende. Alla beslut och åtgärder är användarens eget ansvar.</p>
-
-  <p>IPR hjälper dig att analysera hur fonder eller portföljer har utvecklats över tid. Det är utformat för att visa vad som påverkat avkastning, undersöka alternativa allokeringar och illustrera hur olika faktorer kan påverka resultaten – utan att ge finansiella råd.</p>
-
-  <p>Appen är avsedd för användning i Sverige. Den är inte godkänd för användning eller distribution i andra jurisdiktioner.</p>
-
-  <hr>
-
-  <!-- English text -->
-  <p><strong>IPR</strong> is an educational and analytical tool. It does not provide investment advice or recommendations.</p>
-
-  <p>The information and results shown are based on historical data and are intended to support learning and understanding of portfolio behavior. All decisions and actions remain the sole responsibility of the user.</p>
-
-  <p>IPR helps you discover how funds or asset portfolios have performed over time. It is designed to support understanding of performance drivers, explore alternative allocations, and illustrate how different factors may affect results – all without providing financial advice.</p>
-
-  <p>This app is intended for use in Sweden. It is not approved for use or distribution in other jurisdictions.</p>
-
-  <p><strong>Kontakt:</strong> <a href="mailto:developer@retniw.se">developer@retniw.se</a></p>
-
+  <script>
+    function showSection(lang) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+    }
+  </script>
 </body>
 </html>
