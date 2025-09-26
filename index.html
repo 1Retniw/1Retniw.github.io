@@ -1,42 +1,44 @@
-
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <title>Retniw Consulting AB</title>
+  <title>Retniw Consulting AB – IPR</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      margin: 0 auto;
-      padding: 40px 20px;
-      max-width: 960px;
-      line-height: 1.6;
+      margin: 0;
+      padding: 0 20px;
       color: #222;
+      line-height: 1.6;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .top-bar {
+    header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-top: 40px;
     }
     .logo {
       max-height: 60px;
     }
-    .lang-switch {
+    .lang-buttons {
       display: flex;
       gap: 10px;
     }
-    .lang-switch button {
-      font-size: 14px;
+    .lang-buttons button {
       padding: 6px 12px;
       border: none;
-      border-radius: 5px;
-      background-color: #2c6ed5;
+      border-radius: 6px;
+      background-color: #2266cc;
       color: white;
       cursor: pointer;
+      font-weight: bold;
+      font-size: 0.9em;
     }
-    .lang-switch button img {
-      vertical-align: middle;
-      margin-right: 6px;
+    .lang-buttons button:hover {
+      background-color: #004c99;
     }
     .section {
       margin-top: 40px;
@@ -44,60 +46,69 @@
     .hidden {
       display: none;
     }
+    img.icon {
+      height: 16px;
+      vertical-align: text-bottom;
+      margin-right: 5px;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #555;
+    }
   </style>
 </head>
 <body>
-  <div class="top-bar">
+  <header>
     <img src="Retniwtextlogo.png" alt="Retniw Consulting AB" class="logo">
-    <div class="lang-switch">
-      <button onclick="switchLang('sv')"><img src="https://flagcdn.com/se.svg" width="20"> Svenska</button>
-      <button onclick="switchLang('en')"><img src="https://flagcdn.com/gb.svg" width="20"> English</button>
+    <div class="lang-buttons">
+      <button onclick="setLanguage('sv')">🇸🇪 Svenska</button>
+      <button onclick="setLanguage('en')">🇬🇧 English</button>
     </div>
-  </div>
+  </header>
 
-  <div id="sv" class="section">
-    <img src="IPRljus.png" alt="IPR logotyp" style="max-width: 120px; margin: 30px 0;">
+  <div class="section" id="content-sv">
+    <p><strong>Retniw Consulting AB</strong> bedriver konsultverksamhet inom ekonomi och finans samt investeringsverksamhet avseende värdepapper och därmed förenlig verksamhet.</p>
+
     <p><strong>IPR</strong> är ett utbildnings- och analysverktyg. Det ger inte investeringsråd eller rekommendationer.</p>
+
     <p>Informationen och resultaten som visas bygger på historisk data och är avsedda att stödja lärande och förståelse för portföljbeteende. Alla beslut och åtgärder är användarens eget ansvar.</p>
+
     <p>IPR hjälper dig att analysera hur fonder eller portföljer har utvecklats över tid. Det är utformat för att visa vad som påverkat avkastning, undersöka alternativa allokeringar och illustrera hur olika faktorer kan påverka resultaten – utan att ge finansiella råd.</p>
-    <p>Appen är avsedd för användning i Sverige. Den är inte godkänd för användning eller distribution i andra jurisdiktioner.</p>
 
-    <p>Idén till IPR – Intelligent Portfolio Review – föddes 1995 när Peter Hansson skapade och kodade programmet AFU (Aktiv Förvaltnings Uppföljning) i en Windows-miljö med hjälp av Visual Basic 6. Syftet var att följa upp finansiella investeringar och rapportera resultat till styrelser och intressenter. På den tiden innebar tekniska begränsningar att sådana analyser inte kunde utföras på handhållna enheter, och optimeringar eller analyser tog lång tid att beräkna.</p>
-    <p>Sommaren 2024 bestämde sig Peter för att bygga något som kunde köras på en bärbar enhet – en app som han kunde använda när som helst, var som helst för att förstå hur historisk portföljförvaltning ledde till specifika resultat och varför. Visionen var att vara oberoende av en förvaltares jämförelseindex och istället fokusera på hur en viss tillgång betedde sig inom en portfölj av andra tillgångar.</p>
-    <p>Med Apples hårdvaruacceleration och möjlighet till matematisk optimering i stället för brute-forceberäkning är processen nu nästan omedelbar på en modern iPad. Detta gör det möjligt att optimera portföljen och analysera faktorer direkt – med alla lagrade serier tillgängliga som faktorer – på bara några sekunder. Historiska dataserier erhålls direkt från fondförvaltare eller offentliga databaser som Investing.com och Federal Reserves FRED.</p>
+    <p>Grundaren Peter Hansson har över 30 års erfarenhet från institutionella investeringar. Han var verkställande direktör för SPK Sparinstitutens Pensionskassa mellan 2005 och 2018, efter att ha tjänstgjort som finanschef sedan 1993. Under hans ledarskap tilldelades SPK flera utmärkelser, däribland IPE:s pris för bästa pensionsfond i Sverige sex år i rad, samt erkännande i CIO Magazines European Innovation Awards för Best Portfolio Construction Europe. Peter har tre gånger utsetts till en av världens mest inflytelserika kapitalförvaltare på aiCIO:s globala Power 100-lista. Idag är han ordförande i styrelsen för Nordkinn Asset Management AB, styrelseledamot i Första AP-fonden (AP1), ordförande i Barncancerfondens finansnämnd. IPR utvecklades utifrån Peters eget behov av ett verktyg för att analysera historiska händelser i ett portföljsammanhang.</p>
 
-    <p><br><strong>Grundaren Peter Hansson</strong> har över 30 års erfarenhet från institutionella investeringar. Han var verkställande direktör för SPK Sparinstitutens Pensionskassa mellan 2005 och 2018, efter att ha tjänstgjort som finanschef sedan 1993. Under hans ledarskap tilldelades SPK flera utmärkelser, däribland IPE:s pris för bästa pensionsfond i Sverige sex år i rad, samt erkännande i CIO Magazines European Innovation Awards för Best Portfolio Construction Europe. Peter har tre gånger utsetts till en av världens mest inflytelserika kapitalförvaltare på aiCIO:s globala Power 100-lista. Idag är han ordförande i styrelsen för Nordkinn Asset Management AB, styrelseledamot i Första AP-fonden (AP1), ordförande i Barncancerfondens finansnämnd.</p>
-
-    <hr>
-    <p><strong>Organisationsnummer:</strong> 559238-7335</p>
-    <p><strong>Registreringsland:</strong> Sverige</p>
-    <p><strong>Kontakt:</strong> <a href="mailto:developer@retniw.se">developer@retniw.se</a></p>
+    <footer>
+      <p><strong>Organisationsnummer:</strong> 559238-7335<br>
+         <strong>Registreringsland:</strong> Sverige<br>
+         <strong>Kontakt:</strong> <a href="mailto:developer@retniw.se">developer@retniw.se</a>
+      </p>
+    </footer>
   </div>
 
-  <div id="en" class="section hidden">
-    <img src="IPRljus.png" alt="IPR logo" style="max-width: 120px; margin: 30px 0;">
+  <div class="section hidden" id="content-en">
+    <p><strong>Retniw Consulting AB</strong> provides consulting services in finance and economics and conducts investment activities related to securities and related operations.</p>
+
     <p><strong>IPR</strong> is an educational and analytical tool. It does not provide investment advice or recommendations.</p>
+
     <p>The information and results shown are based on historical data and are intended to support learning and understanding of portfolio behavior. All decisions and actions remain the sole responsibility of the user.</p>
+
     <p>IPR helps you discover how funds or asset portfolios have performed over time. It is designed to support understanding of performance drivers, explore alternative allocations, and illustrate how different factors may affect results – all without providing financial advice.</p>
-    <p>This app is intended for use in Sweden. It is not approved for use or distribution in other jurisdictions.</p>
 
-    <p>The idea for IPR – Intelligent Portfolio Review – was born in 1995 when Peter Hansson created and coded the AFU (Aktiv Förvaltnings Uppföljning) application in a Windows environment using Visual Basic 6. The purpose was to track financial investments and report results to boards and stakeholders. At the time, technical limitations made it impossible to conduct such analyses on handheld devices, and optimizations or calculations took significant time.</p>
-    <p>In the summer of 2024, Peter decided to build something portable – an app he could use anytime, anywhere to understand how historical portfolio management led to specific outcomes and why. The vision was to be independent of any manager’s benchmark and instead focus on how a particular asset behaved within a broader portfolio.</p>
-    <p>Thanks to Apple’s hardware acceleration and the ability to perform mathematical optimization instead of brute-force calculations, the process is now nearly instant on a modern iPad. This enables real-time optimization and factor analysis – with all stored data series available as factors – in just seconds. Historical series are sourced directly from fund managers or public databases such as Investing.com and the Federal Reserve’s FRED.</p>
+    <p>Founder Peter Hansson has over 30 years of experience in institutional investing. He served as CEO of SPK Sparinstitutens Pensionskassa from 2005 to 2018, after acting as CFO since 1993. Under his leadership, SPK received numerous awards, including IPE’s Best Pension Fund in Sweden six years in a row and recognition in CIO Magazine’s European Innovation Awards for Best Portfolio Construction Europe. Peter has been named one of the world’s most influential asset managers three times on aiCIO’s global Power 100 list. Today, he chairs the board of Nordkinn Asset Management AB, is a board member of the First Swedish National Pension Fund (AP1), and chairs the Finance Committee of the Swedish Childhood Cancer Fund. IPR was developed based on Peter’s own need for a tool to analyze historical events in a portfolio context.</p>
 
-    <p><br><strong>Founder Peter Hansson</strong> has over 30 years of experience in institutional investing. He was CEO of SPK Sparinstitutens Pensionskassa from 2005 to 2018, after serving as CFO since 1993. Under his leadership, SPK received several awards, including IPE’s Best Pension Fund in Sweden for six consecutive years, as well as CIO Magazine’s European Innovation Award for Best Portfolio Construction Europe. Peter has been listed three times among the world’s 100 most influential asset managers on aiCIO’s global Power 100 list. Today, he serves as Chairman of Nordkinn Asset Management AB, Board Member of Första AP-fonden (AP1), and Chair of the Finance Committee of the Swedish Childhood Cancer Fund.</p>
-
-    <hr>
-    <p><strong>Organization number:</strong> 559238-7335</p>
-    <p><strong>Country of registration:</strong> Sweden</p>
-    <p><strong>Contact:</strong> <a href="mailto:developer@retniw.se">developer@retniw.se</a></p>
+    <footer>
+      <p><strong>Organization number:</strong> 559238-7335<br>
+         <strong>Registered in:</strong> Sweden<br>
+         <strong>Contact:</strong> <a href="mailto:developer@retniw.se">developer@retniw.se</a>
+      </p>
+    </footer>
   </div>
 
   <script>
-    function switchLang(lang) {
-      document.getElementById('sv').classList.add('hidden');
-      document.getElementById('en').classList.add('hidden');
-      document.getElementById(lang).classList.remove('hidden');
+    function setLanguage(lang) {
+      document.getElementById('content-sv').classList.toggle('hidden', lang !== 'sv');
+      document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
     }
   </script>
 </body>
