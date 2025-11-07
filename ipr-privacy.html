@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>IPR – Integritetspolicy | Retniw Consulting AB</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+      color: #222;
+      line-height: 1.6;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .logo { max-height: 140px; }
+    .lang-buttons {
+      display: flex;
+      gap: 10px;
+    }
+    .lang-buttons button {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 6px;
+      background-color: #2266cc;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+    .lang-buttons button:hover { background-color: #004c99; }
+    .section { margin-top: 40px; }
+    .hidden { display: none; }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Retniwtextlogo.png" alt="Retniw Consulting AB" class="logo">
+    <div class="lang-buttons">
+      <button onclick="setLanguage('sv')">🇸🇪 Svenska</button>
+      <button onclick="setLanguage('en')">🇬🇧 English</button>
+    </div>
+  </header>
+
+  <!-- ====================  SVENSKA VERSIONEN  ==================== -->
+  <div class="section" id="content-sv">
+    <h1>IPR – Integritetspolicy</h1>
+    <p><strong>Gäller från:</strong> November 2025</p>
+
+    <p><strong>Ansvarig:</strong><br>
+      Retniw Consulting AB<br>
+      Organisationsnummer: 559238-7335<br>
+      Registreringsland: Sverige</p>
+
+    <p><strong>Kontakt:</strong> <a href="mailto:developer@retniw.se">developer@retniw.se</a></p>
+
+    <p><strong>Om appen IPR – Intelligent Portfolio Review</strong><br>
+      IPR är ett utbildnings- och analysverktyg utvecklat av Retniw Consulting AB.  
+      Appen syftar till att ge användaren en djupare förståelse för portföljstruktur och beteende.  
+      IPR ger inte investeringsråd eller personliga rekommendationer.</p>
+
+    <p><strong>Dataskydd och integritet</strong><br>
+      IPR samlar inte in, lagrar eller delar någon personlig data.  
+      Alla beräkningar och analyser utförs lokalt på användarens enhet.  
+      Ingen användarinformation, kontodata eller analysresultat skickas till externa servrar eller tredje part.</p>
+
+    <p>Om du väljer att prenumerera via App Store hanteras all betalning och abonnemangshantering av Apple enligt deras egna sekretessregler.  
+      För information om Apples hantering av personuppgifter, se  
+      <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a>.</p>
+
+    <p><strong>Tillämpningsområde</strong><br>
+      Denna integritetspolicy gäller användning av appen IPR inom EU/EES.  
+      Användning eller distribution utanför EU/EES, inklusive i USA, är inte avsedd eller tillåten.</p>
+
+    <footer>
+      <p>© 2025 Retniw Consulting AB – Alla rättigheter förbehållna.</p>
+    </footer>
+  </div>
+
+  <!-- ====================  ENGLISH VERSION  ==================== -->
+  <div class="section hidden" id="content-en">
+    <h1>IPR – Privacy Policy</h1>
+    <p><strong>Effective date:</strong> November 2025</p>
+
+    <p><strong>Data Controller:</strong><br>
+      Retniw Consulting AB<br>
+      Organization number: 559238-7335<br>
+      Registered in: Sweden</p>
+
+    <p><strong>Contact:</strong> <a href="mailto:developer@retniw.se">developer@retniw.se</a></p>
+
+    <p><strong>About the IPR App – Intelligent Portfolio Review</strong><br>
+      IPR is an educational and analytical tool developed by Retniw Consulting AB.  
+      The app is designed to help users gain a deeper understanding of portfolio structure and behavior.  
+      IPR does not provide investment advice or personalized recommendations.</p>
+
+    <p><strong>Data Protection and Privacy</strong><br>
+      IPR does not collect, store, or share any personal data.  
+      All calculations and analyses are performed locally on your device.  
+      No user information, account data, or analysis results are transmitted to external servers or third parties.</p>
+
+    <p>If you choose to subscribe via the App Store, all billing and subscription management are securely handled by Apple in accordance with their own privacy policy.  
+      For more information, see the  
+      <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a>.</p>
+
+    <p><strong>Scope of Application</strong><br>
+      This privacy policy applies to the use of the IPR app within the EU/EEA.  
+      Use or distribution outside the EU/EEA, including in the United States, is not intended or permitted.</p>
+
+    <footer>
+      <p>© 2025 Retniw Consulting AB – All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      document.getElementById('content-sv').classList.toggle('hidden', lang !== 'sv');
+      document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
+    }
+    setLanguage('sv');
+  </script>
+</body>
+</html>
