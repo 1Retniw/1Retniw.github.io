@@ -38,6 +38,17 @@
     .lang-buttons button:hover { background-color: #004c99; }
     .section { margin-top: 40px; }
     .hidden { display: none; }
+    .back-button {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 18px;
+      background-color: #2266cc;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .back-button:hover { background-color: #004c99; }
     footer {
       margin-top: 60px;
       font-size: 0.9em;
@@ -85,6 +96,8 @@
       Denna integritetspolicy gäller användning av appen IPR inom EU/EES.  
       Användning eller distribution utanför EU/EES, inklusive i USA, är inte avsedd eller tillåten.</p>
 
+    <a class="back-button" href="index.html">⬅️ Tillbaka till startsidan</a>
+
     <footer>
       <p>© 2025 Retniw Consulting AB – Alla rättigheter förbehållna.</p>
     </footer>
@@ -120,6 +133,8 @@
       This privacy policy applies to the use of the IPR app within the EU/EEA.  
       Use or distribution outside the EU/EEA, including in the United States, is not intended or permitted.</p>
 
+    <a class="back-button" href="index.html">⬅️ Back to Home</a>
+
     <footer>
       <p>© 2025 Retniw Consulting AB – All rights reserved.</p>
     </footer>
@@ -130,6 +145,7 @@
       document.getElementById('content-sv').classList.toggle('hidden', lang !== 'sv');
       document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
     }
+    // Svenska är default
     setLanguage('sv');
   </script>
 </body>
