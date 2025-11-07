@@ -19,21 +19,34 @@
       justify-content: space-between;
       align-items: center;
       margin-top: 40px;
+      flex-wrap: wrap;
     }
-    .logo { max-height: 160px; }
+    .logo { max-height: 140px; }
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .topnav a {
+      color: #2266cc;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95em;
+    }
+    .topnav a:hover { text-decoration: underline; }
     .lang-buttons {
       display: flex;
-      gap: 10px;
+      gap: 8px;
     }
     .lang-buttons button {
-      padding: 6px 12px;
+      padding: 5px 10px;
       border: none;
       border-radius: 6px;
       background-color: #2266cc;
       color: white;
       cursor: pointer;
       font-weight: bold;
-      font-size: 0.9em;
+      font-size: 0.85em;
     }
     .lang-buttons button:hover { background-color: #004c99; }
     .section { margin-top: 40px; }
@@ -59,9 +72,17 @@
 <body>
   <header>
     <img src="Retniwtextlogo.png" alt="Retniw Consulting AB" class="logo">
-    <div class="lang-buttons">
-      <button onclick="setLanguage('sv')">🇸🇪 Svenska</button>
-      <button onclick="setLanguage('en')">🇬🇧 English</button>
+    <div class="header-right">
+      <nav class="topnav" id="nav-sv">
+        <a href="index.html">Hem</a> | <a href="ipr-privacy.html">Integritetspolicy</a>
+      </nav>
+      <nav class="topnav hidden" id="nav-en">
+        <a href="index.html">Home</a> | <a href="ipr-privacy.html">Privacy Policy</a>
+      </nav>
+      <div class="lang-buttons">
+        <button onclick="setLanguage('sv')">🇸🇪</button>
+        <button onclick="setLanguage('en')">🇬🇧</button>
+      </div>
     </div>
   </header>
 
@@ -82,8 +103,9 @@
     <p><strong>Appen är avsedd för användning inom EU/EES. Användning eller distribution utanför EU/EES, inklusive i USA, är inte avsedd eller tillåten.</strong></p>
 
     <p><strong>Om Peter Hansson</strong><br>
-      Peter Hansson är en oberoende styrelseledamot och rådgivare med mer än 30 års erfarenhet från den institutionella investeringssektorn […]
-      <a href="https://www.linkedin.com/in/peterdhansson/" target="_blank">LinkedIn-profil</a></p>
+    Peter Hansson är en oberoende styrelseledamot och rådgivare med mer än 30 års erfarenhet från den institutionella investeringssektorn. Hans karriär kombinerar ledande roller inom pensionsförvaltning, tillgångsallokering och riskstyrning. Han var VD och CFO för SPK Sparinstitutens Pensionskassa – pensionsbolaget för svenska sparbanker – mellan 1993 och 2018. Under hans ledarskap mottog SPK flera internationella utmärkelser för innovation inom portföljkonstruktion och riskhantering. Idag är Peter verksam i flera styrelser och som rådgivare inom finansbranschen.  
+    Projektet IPR växte fram ur hans långvariga intresse för att förstå hur portföljresultat uppstår ur verkliga investeringsbeslut. Det representerar en syntes mellan akademisk finans och praktisk portföljanalys – utvecklat enbart för utbildnings- och analysändamål.  
+    <a href="https://www.linkedin.com/in/peterdhansson/" target="_blank">LinkedIn-profil</a></p>
 
     <a class="policy-button" href="ipr-privacy.html">📄 IPR – Integritetspolicy</a>
 
@@ -97,13 +119,29 @@
 
   <!-- ====================  ENGLISH  ==================== -->
   <div class="section hidden" id="content-en">
-    <p>Retniw Consulting AB provides consulting services in finance and economics […]</p>
+    <p>Retniw Consulting AB provides consulting services in finance and economics and conducts investment activities related to securities and related operations. We are now preparing to launch IPR – Intelligent Portfolio Review, a tool designed to deepen your understanding of portfolio structure and behavior.</p>
 
     <img src="IPRny.png" alt="IPR logo" style="max-width: 200px; display: block; margin: 20px 0 5px 0;">
     <p><strong>IPR</strong> is an educational and analytical tool. It does not provide investment advice or recommendations.</p>
-    <p>[… same content as before …]</p>
 
-    <a class="policy-button" href="ipr-privacy-en.html">📄 IPR – Privacy Policy</a>
+    <p>The information and results shown are based on historical data and are intended to support learning and understanding of portfolio behavior. All decisions and actions remain the sole responsibility of the user.</p>
+
+    <p>IPR helps you discover how funds or asset portfolios have performed over time. It is designed to support understanding of performance drivers, explore alternative allocations, and illustrate how different factors may affect results – all without providing financial advice.</p>
+
+    <p>The idea for IPR – Intelligent Portfolio Review – was born in 1995 when Peter Hansson created and coded the AFU (Aktiv Förvaltnings Uppföljning) application in a Windows environment using Visual Basic 6. The purpose was to track financial investments and report results to boards and stakeholders. At the time, technical limitations made it impossible to conduct such analyses on handheld devices, and optimizations or calculations took significant time.</p>
+    <p>In the summer of 2024, Peter decided to build something portable – an app he could use anytime, anywhere to understand how historical portfolio management led to specific outcomes and why. The vision was to be independent of any manager’s benchmark and instead focus on how a particular asset behaved within a broader portfolio.</p>
+    <p>Thanks to Apple’s hardware acceleration and the ability to perform mathematical optimization instead of brute-force calculations, the process is now nearly instant on a modern iPad. This enables real-time optimization and factor analysis – with all stored data series available as factors – in just seconds. Historical series are sourced directly from fund managers or public databases such as Investing.com and the Federal Reserve’s FRED.</p>
+
+    <p><strong>This app is intended for use within the EU/EEA. Use or distribution outside the EU/EEA, including in the United States, is not intended or permitted.</strong></p>
+
+    <p><strong>About Peter Hansson</strong><br>
+    Peter Hansson is an independent board professional and senior advisor with more than 30 years of experience in the institutional investment sector. His career combines leadership roles in pension management, asset allocation, and risk governance.  
+    He served as CEO and CFO of SPK Sparinstitutens Pensionskassa, the pension insurance company for Swedish savings banks, between 1993 and 2018. During his tenure, SPK received multiple international awards for innovation in portfolio construction and risk management.  
+    Today, Peter serves on several boards and acts as a senior advisor within the financial industry.  
+    The IPR project grew from his long-standing interest in understanding how portfolio outcomes emerge from real investment decisions. It represents a synthesis of academic finance and practical portfolio analysis — developed purely for educational and analytical use.  
+    <a href="https://www.linkedin.com/in/peterdhansson/" target="_blank">LinkedIn profile</a></p>
+
+    <a class="policy-button" href="ipr-privacy.html">📄 IPR – Privacy Policy</a>
 
     <footer>
       <p><strong>Organization number:</strong> 559238-7335<br>
@@ -117,6 +155,8 @@
     function setLanguage(lang) {
       document.getElementById('content-sv').classList.toggle('hidden', lang !== 'sv');
       document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
+      document.getElementById('nav-sv').classList.toggle('hidden', lang !== 'sv');
+      document.getElementById('nav-en').classList.toggle('hidden', lang !== 'en');
     }
     setLanguage('sv');
   </script>
