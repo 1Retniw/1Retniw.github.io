@@ -71,13 +71,19 @@
       font-weight: 600;
     }
 
-    .screenshot {
-      width: 100%;
-      max-width: 900px;
-      height: auto;
-      margin: 25px 0;
-      border-radius: 10px;
-    }
+    .screenshot-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.screenshot-row img {
+  flex: 1 1 420px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
     footer {
       margin-top: 60px;
@@ -123,15 +129,18 @@ IPR – Intelligent Portfolio Review på App Store →
 
 <p>Informationen och resultaten som visas bygger på historisk data och är avsedda att stödja lärande, analys och förståelse av portföljbeteende. Alla beslut och åtgärder är användarens eget ansvar.</p>
 
-<img src="ipr-screenshot-1b.png" alt="IPR analysvy" class="screenshot">
-<img src="ipr-screenshot-2b.png" alt="IPR faktorvy" class="screenshot">
-
 <p>IPR gör det möjligt att analysera hur fonder eller tillgångsportföljer har betett sig över tid, identifiera drivkrafter bakom historisk utveckling, utforska alternativa allokeringar samt illustrera hur olika faktorer samverkar inom en portfölj – utan att ge finansiella råd.</p>
 
 <p><strong>Appen är avsedd för användning inom EU/EES. Användning eller distribution utanför EU/EES, inklusive i USA, är inte avsedd eller tillåten.</strong></p>
 
+  
 <p><a href="https://www.linkedin.com/in/peterdhansson/" target="_blank">LinkedIn-profil</a></p>
 
+<div class="screenshot-row">
+  <img src="ipr-screenshot-1b.png" alt="IPR analysvy">
+  <img src="ipr-screenshot-2b.png" alt="IPR faktor">
+</div>
+  
 <a class="policy-button" href="ipr-privacy.html">📄 IPR – Integritetspolicy</a>
 
 <footer>
@@ -160,13 +169,15 @@ IPR – Intelligent Portfolio Review on the App Store →
 
 <p>The information and results presented are based on historical data and are intended solely to support learning, analysis, and understanding of portfolio behavior. All decisions and actions remain the sole responsibility of the user.</p>
 
-<img src="ipr-screenshot-1b.png" alt="IPR analysis view" class="screenshot">
-<img src="ipr-screenshot-2b.png" alt="IPR factor view" class="screenshot">
-
 <p>IPR enables users to explore how funds or asset portfolios have behaved over time, examine drivers of historical performance, evaluate alternative allocations, and illustrate how different factors interact within a portfolio — without providing financial advice.</p>
 
 <p><strong>This app is intended for use within the EU/EEA. Use or distribution outside the EU/EEA, including the United States, is not intended or permitted.</strong></p>
 
+<div class="screenshot-row">
+  <img src="ipr-screenshot-1b.png" alt="IPR analysis view">
+  <img src="ipr-screenshot-2b.png" alt="IPR factor view">
+</div>
+  
 <p><a href="https://www.linkedin.com/in/peterdhansson/" target="_blank">LinkedIn profile</a></p>
 
 <a class="policy-button" href="ipr-privacy.html">📄 IPR – Privacy Policy</a>
