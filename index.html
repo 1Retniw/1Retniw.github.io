@@ -49,8 +49,10 @@
       font-size: 0.85em;
     }
     .lang-buttons button:hover { background-color: #004c99; }
+
     .section { margin-top: 40px; }
     .hidden { display: none; }
+
     .policy-button {
       display: inline-block;
       margin-top: 30px;
@@ -62,6 +64,21 @@
       font-weight: 600;
     }
     .policy-button:hover { background-color: #004c99; }
+
+    .appstore-link {
+      display: inline-block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    .screenshot {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      margin: 25px 0;
+      border-radius: 10px;
+    }
+
     footer {
       margin-top: 60px;
       font-size: 0.9em;
@@ -69,103 +86,79 @@
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <img src="Retniwtextlogo.png" alt="Retniw Consulting AB" class="logo">
-    <div class="header-right">
-      <nav class="topnav" id="nav-sv">
-        <a href="ipr-privacy.html">Integritetspolicy</a>
-      </nav>
-      <nav class="topnav hidden" id="nav-en">
-        <a href="ipr-privacy.html">Privacy Policy</a>
-      </nav>
-      <div class="lang-buttons">
-        <button onclick="setLanguage('sv')">🇸🇪</button>
-        <button onclick="setLanguage('en')">🇬🇧</button>
-      </div>
+
+<header>
+  <img src="Retniwtextlogo.png" alt="Retniw Consulting AB" class="logo">
+  <div class="header-right">
+    <nav class="topnav" id="nav-sv">
+      <a href="ipr-privacy.html">Integritetspolicy</a>
+    </nav>
+    <nav class="topnav hidden" id="nav-en">
+      <a href="ipr-privacy.html">Privacy Policy</a>
+    </nav>
+    <div class="lang-buttons">
+      <button onclick="setLanguage('sv')">🇸🇪</button>
+      <button onclick="setLanguage('en')">🇬🇧</button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- ====================  SVENSKA  ==================== -->
- <div class="section" id="content-sv">
-  <p>Retniw Consulting AB bedriver konsultverksamhet inom ekonomi och finans samt investeringsverksamhet avseende värdepapper och därmed förenlig verksamhet. Bolaget förbereder nu lanseringen av <strong>IPR – Intelligent Portfolio Review</strong>, ett analysverktyg utformat för att stödja förståelse av portföljstruktur och historiskt beteende.</p>
+<!-- ==================== SVENSKA ==================== -->
 
-  <img src="IPRny2.png" alt="IPR logotyp" style="max-width: 200px; display: block; margin: 20px 0 5px 0;">
-  <p><strong>IPR</strong> är ett utbildnings- och analysverktyg. Det ger inte investeringsråd, rekommendationer eller prognoser.</p>
+<div class="section" id="content-sv">
 
-  <p>Informationen och resultaten som visas bygger på historisk data och är avsedda att stödja lärande, analys och förståelse av portföljbeteende. Alla beslut och åtgärder är användarens eget ansvar.</p>
+<p>Retniw Consulting AB bedriver konsultverksamhet inom ekonomi och finans samt investeringsverksamhet avseende värdepapper och därmed förenlig verksamhet. <strong>IPR – Intelligent Portfolio Review</strong> har nu lanserats publikt på App Store som ett analysverktyg utformat för att stödja förståelse av portföljstruktur och historiskt beteende.</p>
 
-  <p>IPR gör det möjligt att analysera hur fonder eller tillgångsportföljer har betett sig över tid, identifiera drivkrafter bakom historisk utveckling, utforska alternativa allokeringar samt illustrera hur olika faktorer samverkar inom en portfölj – utan att ge finansiella råd.</p>
+<p>
+<a class="appstore-link" href="https://apps.apple.com/app/id6754226063" target="_blank">
+IPR – Intelligent Portfolio Review på App Store →
+</a>
+</p>
 
-  <p>Det analytiska konceptet bakom IPR har sitt ursprung i utvecklingen av AFU (Aktiv Förvaltnings Uppföljning) år 1995, ett ramverk framtaget för institutionell portföljuppföljning och rapportering till styrelser och långsiktiga intressenter. Vid denna tidpunkt innebar tekniska begränsningar att sådana analyser var resurskrävande och olämpliga för bärbara enheter.</p>
+<img src="IPRny2.png" alt="IPR logotyp" style="max-width: 200px; display: block; margin: 20px 0 5px 0;">
 
-  <p>Genom utvecklingen av Apples hårdvaruacceleration och moderna optimeringstekniker har detta analytiska koncept kunnat vidareutvecklas till en realtidsbaserad och interaktiv analysmiljö. I dag ersätter matematisk optimering tidigare brute-force-beräkningar, vilket möjliggör nära omedelbara analyser på modern iPad-hårdvara.</p>
+<p><strong>IPR</strong> är ett utbildnings- och analysverktyg. Det ger inte investeringsråd, rekommendationer eller prognoser.</p>
 
-  <p>Detta gör det möjligt att genomföra portföljoptimering och faktoranalys – med samtliga lagrade dataserier tillgängliga som potentiella faktorer – på bara några sekunder. Historiska dataserier hämtas från fondförvaltare eller från offentliga databaser såsom Investing.com och Federal Reserve’s FRED.</p>
+<p>Informationen och resultaten som visas bygger på historisk data och är avsedda att stödja lärande, analys och förståelse av portföljbeteende. Alla beslut och åtgärder är användarens eget ansvar.</p>
 
-  <p><strong>Appen är avsedd för användning inom EU/EES. Användning eller distribution utanför EU/EES, inklusive i USA, är inte avsedd eller tillåten.</strong></p>
+<!-- SCREENSHOT 1 -->
+<img src="ipr-screenshot-1.png" alt="IPR analysvy" class="screenshot">
 
-  <p><strong>Om utvecklaren</strong><br>
-  IPR har utvecklats av en oberoende styrelseledamot och senior rådgivare med mer än 30 års erfarenhet från den institutionella investeringssektorn. Bakgrunden omfattar långvarigt ansvar inom pensionsförvaltning, tillgångsallokering och riskstyrning samt pågående styrelse- och rådgivningsuppdrag inom finansbranschen.</p>
+<!-- SCREENSHOT 2 -->
+<img src="ipr-screenshot-2.png" alt="IPR analysvy" class="screenshot">
 
-  <p>Projektet speglar ett långvarigt intresse för att förstå hur portföljutfall uppstår ur verkliga investeringsbeslut och hur struktur, diversifiering och faktorexponering samverkar över tid. IPR representerar en syntes av akademisk finans och praktisk portföljanalys, utvecklad som ett neutralt verktyg för utbildnings- och analysändamål.</p>
+<p>IPR gör det möjligt att analysera hur fonder eller tillgångsportföljer har betett sig över tid, identifiera drivkrafter bakom historisk utveckling, utforska alternativa allokeringar samt illustrera hur olika faktorer samverkar inom en portfölj – utan att ge finansiella råd.</p>
 
-  <p><a href="https://www.linkedin.com/in/peterdhansson/" target="_blank">LinkedIn-profil</a></p>
+<p>Det analytiska konceptet bakom IPR har sitt ursprung i utvecklingen av AFU (Aktiv Förvaltnings Uppföljning) år 1995...</p>
 
-  <a class="policy-button" href="ipr-privacy.html">📄 IPR – Integritetspolicy</a>
+<p><strong>Appen är avsedd för användning inom EU/EES. Användning eller distribution utanför EU/EES, inklusive i USA, är inte avsedd eller tillåten.</strong></p>
 
-  <footer>
-    <p><strong>Organisationsnummer:</strong> 559238-7335<br>
-       <strong>Registreringsland:</strong> Sverige<br>
-       <strong>Kontakt:</strong> <a href="mailto:developer@retniw.se">developer@retniw.se</a>
-    </p>
-  </footer>
+<p><strong>Om utvecklaren</strong><br>
+IPR har utvecklats av en oberoende styrelseledamot och senior rådgivare med mer än 30 års erfarenhet från den institutionella investeringssektorn.</p>
+
+<p><a href="https://www.linkedin.com/in/peterdhansson/" target="_blank">LinkedIn-profil</a></p>
+
+<a class="policy-button" href="ipr-privacy.html">📄 IPR – Integritetspolicy</a>
+
+<footer>
+<p><strong>Organisationsnummer:</strong> 559238-7335<br>
+<strong>Registreringsland:</strong> Sverige<br>
+<strong>Kontakt:</strong> <a href="mailto:developer@retniw.se">developer@retniw.se</a></p>
+</footer>
+
 </div>
 
-  <!-- ====================  ENGLISH  ==================== -->
-  <div class="section hidden" id="content-en">
-    <p>Retniw Consulting AB provides consulting services in finance and economics and conducts investment activities related to securities and related operations. The company is preparing the public launch of <strong>IPR – Intelligent Portfolio Review</strong>, an analytical tool designed to support understanding of portfolio structure and historical behavior.</p>
+<script>
+function setLanguage(lang) {
+  document.getElementById('content-sv').classList.toggle('hidden', lang !== 'sv');
+  document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
+  document.getElementById('nav-sv').classList.toggle('hidden', lang !== 'sv');
+  document.getElementById('nav-en').classList.toggle('hidden', lang !== 'en');
+}
+setLanguage('sv');
+</script>
 
-    <img src="IPRny.png" alt="IPR logo" style="max-width: 200px; display: block; margin: 20px 0 5px 0;">
-    <p><strong>IPR</strong> is an educational and analytical tool. It does not provide investment advice, recommendations, or forecasts.</p>
-
-    <p>The information and results presented are based on historical data and are intended solely to support learning, analysis, and understanding of portfolio behavior. All decisions and actions remain the sole responsibility of the user.</p>
-
-    <p>IPR enables users to explore how funds or asset portfolios have behaved over time, examine drivers of historical performance, evaluate alternative allocations, and illustrate how different factors interact within a portfolio — without providing financial advice.</p>
-
-    <p>The analytical concept behind IPR originated in 1995 with the development of AFU (Aktiv Förvaltnings Uppföljning), a framework created to support institutional portfolio review and reporting for boards and long-term stakeholders. At the time, technical limitations made such analyses resource-intensive and unsuitable for portable devices.</p>
-
-    <p>Advances in Apple’s hardware acceleration and modern optimization techniques have since made it possible to evolve this analytical concept into a real-time, interactive environment. Mathematical optimization now replaces brute-force calculations, enabling near-instant analysis on modern iPad hardware.</p>
-
-    <p>This allows users to perform portfolio optimization and factor analysis — using all available stored data series as potential factors — within seconds. Historical data series are sourced directly from fund managers or from public databases such as Investing.com and the Federal Reserve’s FRED.</p>
-
-    <p><strong>This app is intended for use within the EU/EEA. Use or distribution outside the EU/EEA, including the United States, is not intended or permitted.</strong></p>
-
-    <p><strong>About the developer</strong><br>
-    IPR was developed by an independent board professional and senior advisor with more than 30 years of experience in the institutional investment sector. The background includes long-term responsibility within pension management, asset allocation, and risk governance, as well as ongoing board and advisory roles within the financial industry.</p>
-
-    <p>The project reflects a long-standing interest in understanding how portfolio outcomes emerge from real investment decisions and how structure, diversification, and factor exposure interact over time. IPR represents a synthesis of academic finance and practical portfolio analysis, developed as a neutral tool for educational and analytical use.</p>
-
-    <p><a href="https://www.linkedin.com/in/peterdhansson/" target="_blank">LinkedIn profile</a></p>
-
-    <a class="policy-button" href="ipr-privacy.html">📄 IPR – Privacy Policy</a>
-
-    <footer>
-      <p><strong>Organization number:</strong> 559238-7335<br>
-         <strong>Registered in:</strong> Sweden<br>
-         <strong>Contact:</strong> <a href="mailto:developer@retniw.se">developer@retniw.se</a>
-      </p>
-    </footer>
-  </div>
-
-  <script>
-    function setLanguage(lang) {
-      document.getElementById('content-sv').classList.toggle('hidden', lang !== 'sv');
-      document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
-      document.getElementById('nav-sv').classList.toggle('hidden', lang !== 'sv');
-      document.getElementById('nav-en').classList.toggle('hidden', lang !== 'en');
-    }
-    setLanguage('sv');
-  </script>
 </body>
 </html>
