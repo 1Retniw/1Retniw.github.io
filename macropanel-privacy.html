@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MacroPanel – Privacy Policy | Retniw Consulting AB</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+      color: #222;
+      line-height: 1.6;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+    .logo { max-height: 140px; }
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .topnav a {
+      color: #2266cc;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95em;
+    }
+    .topnav a:hover { text-decoration: underline; }
+    .lang-buttons {
+      display: flex;
+      gap: 8px;
+    }
+    .lang-buttons button {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 6px;
+      background-color: #2266cc;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 0.85em;
+    }
+    .lang-buttons button:hover { background-color: #004c99; }
+    .section { margin-top: 40px; }
+    .hidden { display: none; }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Retniwtextlogo.png" alt="Retniw Consulting AB" class="logo">
+    <div class="header-right">
+      <nav class="topnav hidden" id="nav-sv">
+        <a href="index.html">Hem</a>
+      </nav>
+      <nav class="topnav" id="nav-en">
+        <a href="index.html">Home</a>
+      </nav>
+      <div class="lang-buttons">
+        <button onclick="setLanguage('sv')">🇸🇪</button>
+        <button onclick="setLanguage('en')">🇬🇧</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================  ENGLISH (default)  ==================== -->
+  <div class="section" id="content-en">
+    <h2>MacroPanel – Privacy Policy</h2>
+    <p><strong>Last updated:</strong> July 2026</p>
+
+    <p>MacroPanel does not collect, store, or share any personal data. The app presents macroeconomic data series from the Federal Reserve (FRED) and the European Central Bank (ECB) alongside AI-generated paraphrased summaries of publicly published views and claims from established financial market participants. This content is compiled independently of any user activity — MacroPanel does not collect any data from its users, and does not require account creation or login.</p>
+
+    <p>If you choose to subscribe via the App Store, all billing and subscription management is handled securely by Apple, in accordance with Apple's own privacy policies.</p>
+
+    <p><strong>Responsible entity:</strong><br>
+    Retniw Consulting AB<br>
+    Organization number: 559238-7335<br>
+    Registered in: Sweden<br>
+    Contact: <a href="mailto:developer@retniw.se">developer@retniw.se</a></p>
+
+    <p>This app is intended for use within the EU/EEA. Use or distribution outside the EU/EEA, including in the United States, is not intended or permitted.</p>
+
+    <footer>
+      <p>© 2026 Retniw Consulting AB. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- ====================  SVENSKA  ==================== -->
+  <div class="section hidden" id="content-sv">
+    <h2>MacroPanel – Integritetspolicy</h2>
+    <p><strong>Senast uppdaterad:</strong> Juli 2026</p>
+
+    <p>MacroPanel samlar inte in, lagrar eller delar någon personlig data. Appen visar makroekonomiska dataserier från Federal Reserve (FRED) och Europeiska centralbanken (ECB) tillsammans med AI-genererade parafraserade sammanfattningar av publikt publicerade uppfattningar och påståenden från vedertagna finansmarknadsaktörer. Detta innehåll sammanställs oberoende av användarens aktivitet — MacroPanel samlar inte in någon data från sina användare och kräver inget konto eller inloggning.</p>
+
+    <p>Om du väljer att prenumerera via App Store hanteras all betalning och abonnemangshantering säkert av Apple, enligt Apples egna sekretessregler.</p>
+
+    <p><strong>Ansvarig utgivare:</strong><br>
+    Retniw Consulting AB<br>
+    Organisationsnummer: 559238-7335<br>
+    Registreringsland: Sverige<br>
+    Kontakt: <a href="mailto:developer@retniw.se">developer@retniw.se</a></p>
+
+    <p>Denna app är avsedd för användning inom EU/EES. Användning eller distribution utanför EU/EES, inklusive i USA, är inte avsedd eller tillåten.</p>
+
+    <footer>
+      <p>© 2026 Retniw Consulting AB. Alla rättigheter förbehållna.</p>
+    </footer>
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      document.getElementById('content-sv').classList.toggle('hidden', lang !== 'sv');
+      document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
+      document.getElementById('nav-sv').classList.toggle('hidden', lang !== 'sv');
+      document.getElementById('nav-en').classList.toggle('hidden', lang !== 'en');
+    }
+    setLanguage('en');
+  </script>
+</body>
+</html>

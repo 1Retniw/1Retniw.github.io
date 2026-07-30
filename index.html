@@ -2,7 +2,7 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <title>Retniw Consulting AB – IPR</title>
+  <title>Retniw Consulting AB – IPR & MacroPanel</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -26,12 +26,14 @@
       display: flex;
       align-items: center;
       gap: 20px;
+      flex-wrap: wrap;
     }
     .topnav a {
       color: #2266cc;
       text-decoration: none;
       font-weight: 600;
       font-size: 0.95em;
+      margin-right: 14px;
     }
     .topnav a:hover { text-decoration: underline; }
     .lang-buttons {
@@ -53,6 +55,16 @@
     .section { margin-top: 40px; }
     .hidden { display: none; }
 
+    .app-block {
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 1px solid #ddd;
+    }
+    .app-block:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+
     .policy-button {
       display: inline-block;
       margin-top: 30px;
@@ -71,19 +83,26 @@
       font-weight: 600;
     }
 
-    .screenshot-row {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: 25px 0;
-}
+    .coming-soon {
+      display: inline-block;
+      margin-top: 10px;
+      font-style: italic;
+      color: #555;
+    }
 
-.screenshot-row img {
-  width: 100%;
-  max-width: 420px;   /* ← detta är nyckeln */
-  height: auto;
-  border-radius: 10px;
-}
+    .screenshot-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 25px 0;
+    }
+
+    .screenshot-row img {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      border-radius: 10px;
+    }
 
     footer {
       margin-top: 60px;
@@ -99,10 +118,12 @@
   <img src="Retniwtextlogo.png" alt="Retniw Consulting AB" class="logo">
   <div class="header-right">
     <nav class="topnav" id="nav-sv">
-      <a href="ipr-privacy.html">Integritetspolicy</a>
+      <a href="ipr-privacy.html">IPR – Integritetspolicy</a>
+      <a href="macropanel-privacy.html">MacroPanel – Integritetspolicy</a>
     </nav>
     <nav class="topnav hidden" id="nav-en">
-      <a href="ipr-privacy.html">Privacy Policy</a>
+      <a href="ipr-privacy.html">IPR – Privacy Policy</a>
+      <a href="macropanel-privacy.html">MacroPanel – Privacy Policy</a>
     </nav>
     <div class="lang-buttons">
       <button onclick="setLanguage('sv')">🇸🇪</button>
@@ -115,8 +136,9 @@
 
 <div class="section" id="content-sv">
 
+<div class="app-block">
+<h2>IPR</h2>
 <p>Retniw Consulting AB bedriver konsultverksamhet inom ekonomi och finans samt investeringsverksamhet avseende värdepapper och därmed förenlig verksamhet. <strong>Intelligent Portfolio Review (IPR)</strong> är nu lanserad publikt på App Store som ett analysverktyg utformat för att stödja förståelse av portföljstruktur och historiskt beteende.</p>
-
 
 <img src="IPRny2.png" alt="IPR logotyp" style="max-width: 200px; display: block; margin: 20px 0 5px 0;">
 
@@ -133,8 +155,22 @@
   <img src="ipr-screenshot-2b.png" alt="IPR faktor">
 </div>
 
+<div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid #ddd;">
+<h2>MacroPanel</h2>
+<p>Retniw Consulting AB utvecklar nu även en ny app, <strong>MacroPanel</strong>. Varje vecka publicerar dussintals ekonomer sin syn på ekonomin. MacroPanel låter dig se var publicerad forskning är överens, var den går isär, och vilket makroekonomiskt scenario dagens data mest liknar.</p>
 
-<p><strong>Om utvecklaren</strong><br>
+<p><strong>MacroPanel</strong> är ett utbildningsverktyg. Det ger inte investeringsråd eller rekommendationer.</p>
+
+<p><strong>Appen är avsedd för användning inom EU/EES. Användning eller distribution utanför EU/EES, inklusive i USA, är inte avsedd eller tillåten.</strong></p>
+
+<p><em>Mer information kommer snart.</em></p>
+
+<a class="policy-button" href="macropanel-privacy.html">📄 MacroPanel – Integritetspolicy</a>
+
+<p><span class="coming-soon">Kommer snart på App Store.</span></p>
+</div>
+
+<p style="margin-top: 40px;"><strong>Om utvecklaren</strong><br>
 <p>IPR har utvecklats av en oberoende styrelseledamot och senior rådgivare med mer än 30 års erfarenhet från den institutionella investeringssektorn.</p>
 <p><a href="https://www.linkedin.com/in/peterdhansson/" target="_blank">LinkedIn-profil</a></p>
 
@@ -145,7 +181,8 @@
 Intelligent Portfolio Review (IPR) på App Store →
 </a>
 </p>
-  
+</div>
+
 <footer>
 <p><strong>Organisationsnummer:</strong> 559238-7335<br>
 <strong>Registreringsland:</strong> Sverige<br>
@@ -158,6 +195,8 @@ Intelligent Portfolio Review (IPR) på App Store →
 
 <div class="section hidden" id="content-en">
 
+<div class="app-block">
+<h2>IPR</h2>
 <p>Retniw Consulting AB provides consulting services in finance and economics and conducts investment activities related to securities and related operations. <strong>Intelligent Portfolio Review (IPR)</strong> is now publicly available on the App Store as an analytical tool designed to support understanding of portfolio structure and historical behavior.</p>
 
 <img src="IPRny2.png" alt="IPR logotyp" style="max-width: 200px; display: block; margin: 20px 0 5px 0;">
@@ -175,18 +214,33 @@ Intelligent Portfolio Review (IPR) på App Store →
   <img src="ipr-screenshot-2b.png" alt="IPR factor view">
 </div>
 
+<div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid #ddd;">
+<h2>MacroPanel</h2>
+<p>Retniw Consulting AB is now also developing a new app, <strong>MacroPanel</strong>. Every week dozens of economists publish views on the economy. MacroPanel lets you see where public research agrees, where it disagrees, and which macro environment today's data most closely resembles.</p>
 
-<p><strong>About the  developer</strong><br>
+<p><strong>MacroPanel</strong> is an educational tool. It does not provide investment advice or recommendations.</p>
+
+<p><strong>This app is intended for use within the EU/EEA. Use or distribution outside the EU/EEA, including the United States, is not intended or permitted.</strong></p>
+
+<p><em>More information coming soon.</em></p>
+
+<a class="policy-button" href="macropanel-privacy.html">📄 MacroPanel – Privacy Policy</a>
+
+<p><span class="coming-soon">Coming soon on the App Store.</span></p>
+</div>
+
+<p style="margin-top: 40px;"><strong>About the developer</strong><br>
 <p>IPR has been developed by an independent board professional and senior advisor with more than 30 years of experience in institutional investment management, asset allocation, and portfolio governance.</p>
-<p><a href="https://www.linkedin.com/in/peterdhansson/" target="_blank">LinkedIn-profil</a></p>
+<p><a href="https://www.linkedin.com/in/peterdhansson/" target="_blank">LinkedIn profile</a></p>
 
 <a class="policy-button" href="ipr-privacy.html">📄 IPR – Privacy Policy</a>
 
 <p>
 <a class="appstore-link" href="https://apps.apple.com/app/id6754226063" target="_blank">
-Intelligent Portfolio Review(IPR) on the App Store →
+Intelligent Portfolio Review (IPR) on the App Store →
 </a>
 </p>
+</div>
 
 <footer>
 <p><strong>Organization number:</strong> 559238-7335<br>
