@@ -104,6 +104,12 @@
       border-radius: 10px;
     }
 
+
+    .wineplaces-screenshot-row img {
+      border: 1px solid #d8d8d8;
+      box-sizing: border-box;
+    }
+
     footer {
       margin-top: 60px;
       font-size: 0.9em;
@@ -140,9 +146,9 @@
 <div class="app-block">
 <h2>WinePlaces</h2>
 <p><strong>WinePlaces</strong> är en personlig vinapp med geografiskt fokus. Upptäck producenter och vinplatser, kom ihåg var du har varit, registrera provningar, spara platser du vill utforska och planera resor.</p>
-<img src="WinePlaces_Icon.png" alt="WinePlaces appikon" style="max-width: 160px; display: block; margin: 20px 0 5px 0; border-radius: 28px;">
+<img src="WinePlaces_Icon.png" alt="WinePlaces appikon" style="max-width: 125px; display: block; margin: 20px 0 5px 0; border-radius: 22px;">
 <p>WinePlaces använder Apple Maps för att hjälpa dig hitta och utforska vinproducenter och vinrelaterade platser. Din personliga information i WinePlaces, såsom besökta platser, önskelista, provningar och resor, lagras lokalt på din enhet.</p>
-<div class="screenshot-row">
+<div class="screenshot-row wineplaces-screenshot-row">
   <img src="WinePlaces1.PNG" alt="WinePlaces översikt">
   <img src="WinePlaces2.PNG" alt="WinePlaces kartvy">
 </div>
@@ -191,9 +197,9 @@
 <div class="app-block">
 <h2>WinePlaces</h2>
 <p><strong>WinePlaces</strong> is a personal wine app with a geographic focus. Discover producers and wine places, remember where you have been, record tastings, save places you want to explore, and plan trips.</p>
-<img src="WinePlaces_Icon.png" alt="WinePlaces app icon" style="max-width: 160px; display: block; margin: 20px 0 5px 0; border-radius: 28px;">
+<img src="WinePlaces_Icon.png" alt="WinePlaces app icon" style="max-width: 125px; display: block; margin: 20px 0 5px 0; border-radius: 22px;">
 <p>WinePlaces uses Apple Maps to help you find and explore wine producers and wine-related places. Your personal WinePlaces information, such as visited places, wishlist, tastings, and trips, is stored locally on your device.</p>
-<div class="screenshot-row">
+<div class="screenshot-row wineplaces-screenshot-row">
   <img src="WinePlaces1.PNG" alt="WinePlaces overview">
   <img src="WinePlaces2.PNG" alt="WinePlaces map view">
 </div>
@@ -241,7 +247,7 @@ function setLanguage(lang) {
   document.getElementById('nav-sv').classList.toggle('hidden', lang !== 'sv');
   document.getElementById('nav-en').classList.toggle('hidden', lang !== 'en');
 }
-setLanguage('sv');
+setLanguage('en');
 </script>
 </body>
 </html>
